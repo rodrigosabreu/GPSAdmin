@@ -1,0 +1,107 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="GPSAdminVIEW.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="CSS/Estilo.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+       
+        .style2
+        {
+            width: 179px;
+        }
+        </style>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+    
+    <table border=0 cellpadding=0 cellspacing=0 width=100%>
+    <tr><td>
+        
+        <div id="topo">
+        <br />
+        <br />
+        <br />
+        </div>
+        
+        </td></tr>    
+        
+        <tr><td style="text-align: right">
+        
+        
+        
+            <asp:Label ID="lbl_usuario" runat="server"></asp:Label>
+        
+            &nbsp;&nbsp;<asp:Label ID="lbl_grupo" runat="server"></asp:Label>
+        
+        &nbsp;
+            <asp:LinkButton ID="lb_sair" runat="server" Font-Bold="True" OnClick="lb_sair_Click">SAIR</asp:LinkButton>
+&nbsp;&nbsp;
+        
+        </td></tr> 
+    </table>
+
+
+    <table border=0 cellpadding=0 cellspacing=0 width=100%>
+    
+    <tr>
+    <td class="style2" valign=top>
+        <asp:TreeView ID="TreeView1" runat="server">
+            <Nodes>
+                <asp:TreeNode Text="Gerenciamento" 
+                    Value="Gerenciamento">
+                    <asp:TreeNode Text="Clientes" Value="Clientes">
+                        <asp:TreeNode NavigateUrl="~/Clientes.aspx" Text="Cadastro" Value="Cadastro">
+                        </asp:TreeNode>
+                        <asp:TreeNode NavigateUrl="~/ClientesBuscaLista.aspx" Text="Alteração" 
+                            Value="Alteração"></asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="Filiais" Value="Filiais">
+                        <asp:TreeNode NavigateUrl="~/Filiais.aspx" Text="Cadastro" Value="Cadastro"></asp:TreeNode>
+                        <asp:TreeNode NavigateUrl="~/FiliaisBuscaLista.aspx" Text="Alteração" Value="Alteração"></asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="Usuários" Value="Usuários">
+                        <asp:TreeNode NavigateUrl="~/Usuarios.aspx" Text="Cadastro" Value="Cadastro"></asp:TreeNode>
+                        <asp:TreeNode Text="Alteração" Value="Alteração" NavigateUrl="~/UsuariosBuscaLista.aspx"></asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="Usuários / Filiais" Value="Usuários / Filiais">
+                        <asp:TreeNode Text="Cadastro" Value="Cadastro" NavigateUrl="~/PermissaoFilial.aspx"></asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="Usuários / Veículos" Value="Usuários / Veículos">
+                        <asp:TreeNode NavigateUrl="~/PermissaoVeiculo.aspx" Text="Cadastro" Value="Cadastro"></asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="Veículos Novo" Value="Veículos Novo">
+                        <asp:TreeNode Text="Cadastro" Value="Cadastro"></asp:TreeNode>
+                        <asp:TreeNode Text="Alteração" Value="Alteração"></asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="Imei / Veículos" Value="Imei / Veículos"></asp:TreeNode>
+                    <asp:TreeNode NavigateUrl="~/Veiculo.aspx" Text="Veículos" Value="Veículos">
+                    </asp:TreeNode>
+                </asp:TreeNode>
+            </Nodes>
+        </asp:TreeView>
+    
+    </td>
+    <td valign="top">
+     
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+    Conteudo
+        
+    </asp:ContentPlaceHolder>
+       
+    </td>
+    </tr>
+    </table>  
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9A2D736F-7A4E-4BA8-8480-271AAD0FF923}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GPSAdminVIEW</RootNamespace>
+    <AssemblyName>GPSAdminVIEW</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Clientes.aspx" />
+    <Content Include="ClientesBuscaLista.aspx" />
+    <Content Include="Css\Estilo.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Filiais.aspx" />
+    <Content Include="FiliaisBuscaLista.aspx" />
+    <Content Include="FiliaisEscolheCliente.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="Images\bg.jpg" />
+    <Content Include="Images\calendario.gif" />
+    <Content Include="Images\topo.png" />
+    <Content Include="Images\topo1.png" />
+    <Content Include="Images\topo2.png" />
+    <Content Include="Images\topoTESTE.png" />
+    <Content Include="Images\wbg.gif" />
+    <Content Include="PermissaoFilial.aspx" />
+    <Content Include="PermissaoFilialEscolheCliente.aspx" />
+    <Content Include="PermissaoVeiculo.aspx" />
+    <Content Include="PermissaoVeiculoEscolheCliente.aspx" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="UCEscolheCliente.ascx" />
+    <Content Include="Usuarios.aspx" />
+    <Content Include="UsuariosBuscaLista.aspx" />
+    <Content Include="UsuariosEscolheCliente.aspx" />
+    <Content Include="Veiculo.aspx" />
+    <Content Include="Veiculos.aspx" />
+    <Content Include="VeiculosEscolheCliente.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clientes.aspx.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clientes.aspx.designer.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientesBuscaLista.aspx.cs">
+      <DependentUpon>ClientesBuscaLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientesBuscaLista.aspx.designer.cs">
+      <DependentUpon>ClientesBuscaLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Filiais.aspx.cs">
+      <DependentUpon>Filiais.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Filiais.aspx.designer.cs">
+      <DependentUpon>Filiais.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FiliaisBuscaLista.aspx.cs">
+      <DependentUpon>FiliaisBuscaLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FiliaisBuscaLista.aspx.designer.cs">
+      <DependentUpon>FiliaisBuscaLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FiliaisEscolheCliente.aspx.cs">
+      <DependentUpon>FiliaisEscolheCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FiliaisEscolheCliente.aspx.designer.cs">
+      <DependentUpon>FiliaisEscolheCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PermissaoFilial.aspx.cs">
+      <DependentUpon>PermissaoFilial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PermissaoFilial.aspx.designer.cs">
+      <DependentUpon>PermissaoFilial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PermissaoFilialEscolheCliente.aspx.cs">
+      <DependentUpon>PermissaoFilialEscolheCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PermissaoFilialEscolheCliente.aspx.designer.cs">
+      <DependentUpon>PermissaoFilialEscolheCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PermissaoVeiculo.aspx.cs">
+      <DependentUpon>PermissaoVeiculo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PermissaoVeiculo.aspx.designer.cs">
+      <DependentUpon>PermissaoVeiculo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PermissaoVeiculoEscolheCliente.aspx.cs">
+      <DependentUpon>PermissaoVeiculoEscolheCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PermissaoVeiculoEscolheCliente.aspx.designer.cs">
+      <DependentUpon>PermissaoVeiculoEscolheCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UCEscolheCliente.ascx.cs">
+      <DependentUpon>UCEscolheCliente.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCEscolheCliente.ascx.designer.cs">
+      <DependentUpon>UCEscolheCliente.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios.aspx.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usuarios.aspx.designer.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UsuariosBuscaLista.aspx.cs">
+      <DependentUpon>UsuariosBuscaLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UsuariosBuscaLista.aspx.designer.cs">
+      <DependentUpon>UsuariosBuscaLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UsuariosEscolheCliente.aspx.cs">
+      <DependentUpon>UsuariosEscolheCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UsuariosEscolheCliente.aspx.designer.cs">
+      <DependentUpon>UsuariosEscolheCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Veiculo.aspx.cs">
+      <DependentUpon>Veiculo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Veiculo.aspx.designer.cs">
+      <DependentUpon>Veiculo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Veiculos.aspx.cs">
+      <DependentUpon>Veiculos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Veiculos.aspx.designer.cs">
+      <DependentUpon>Veiculos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VeiculosEscolheCliente.aspx.cs">
+      <DependentUpon>VeiculosEscolheCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VeiculosEscolheCliente.aspx.designer.cs">
+      <DependentUpon>VeiculosEscolheCliente.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site1.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GPSAdminBLL\GPSAdminBLL.csproj">
+      <Project>{A927D8E7-43F7-438E-BBF9-D9AB013C0F67}</Project>
+      <Name>GPSAdminBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GPSAdminModel\GPSAdminModel.csproj">
+      <Project>{b4da272b-a6ea-43a1-89dc-1d25e91aae02}</Project>
+      <Name>GPSAdminModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\GPSAdmin PRODUCAO Win2012.pubxml" />
+    <None Include="Properties\PublishProfiles\GPSAdminTESTE-Win2008.pubxml" />
+    <None Include="Properties\PublishProfiles\GPSAdminTESTE-Win2012.pubxml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52322</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

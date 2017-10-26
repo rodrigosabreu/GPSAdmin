@@ -1,0 +1,102 @@
+﻿body {
+margin:0 0 5px 0;
+padding:0;
+font:11px/1.5em Verdana, Arial, Serif;
+color:#555555;
+background-image:url('../Images/bg.jpg');
+    text-align: center;
+}
+
+#topo{
+width:auto;
+height:126px;
+background:#FFFFFF url('../Images/topoTESTE.png') no-repeat center bottom;
+margin-bottom: 0px;
+}
+
+.barra{
+width:auto;
+height:15px;
+background:#D0DEF0 url(../Images/wbg.gif) repeat-x;
+		
+border-right:solid 1px #c0c0c0;
+border-left:solid 1px #c0c0c0;
+border-bottom:solid 1px #c0c0c0;
+border-top:0px;
+		
+display: block;
+padding:5px;   
+position:relative;  
+margin-bottom:5px;	
+text-align:right; 
+}
+
+.rei {
+margin:1%;
+position:static;
+overflow:hidden;
+}
+
+.menu
+{
+float: left;
+width:22%;
+left:1%;
+color:#99f;		
+overflow:hidden;    
+border-right:solid 1px #c0c0c0;
+border-left:solid 1px #c0c0c0;
+border-bottom:solid 1px #c0c0c0;
+border-top:0px;
+} 
+
+.menubv {
+font-family:Verdana;
+font-size:10px;	
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+line-height:normal;
+margin:0pt;
+padding:0pt;
+width:100%;
+overflow:hidden;
+}
+
+.menubv ul{					
+margin:0px;
+padding-left:4px;
+font-family:Verdana;
+font-size:11px;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+background: url(../images/wbg.gif) repeat-x;
+background-color:#D0DEF0;
+color:#000000;
+display:block;
+font-weight:bold;
+line-height:22px;
+}
+
+
+.conteudo {   		
+float: left;
+width: 75%; 	
+}
+
+.tabela
+{
+	border:1px solid #c0c0c0;
+	width: 427px;
+}
+
+.td
+{padding:3px;
+color:#000000;
+font-size: 9pt;
+border-bottom-width: 3px;
+border-bottom-style: solid;
+border-bottom-color: #f1f1f1;}
+
+#bgcolor{background-color: #0066CC;}

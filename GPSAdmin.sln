@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPSAdminVIEW", "GPSAdminVIEW\GPSAdminVIEW.csproj", "{9A2D736F-7A4E-4BA8-8480-271AAD0FF923}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPSAdminBLL", "GPSAdminBLL\GPSAdminBLL.csproj", "{A927D8E7-43F7-438E-BBF9-D9AB013C0F67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPSAdminDAL", "GPSAdminDAL\GPSAdminDAL.csproj", "{DD5AE80E-D20E-4054-892F-80EC696B62D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPSAdminModel", "GPSAdminModel\GPSAdminModel.csproj", "{B4DA272B-A6EA-43A1-89DC-1D25E91AAE02}"
+EndProject
+Global	
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A2D736F-7A4E-4BA8-8480-271AAD0FF923}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A2D736F-7A4E-4BA8-8480-271AAD0FF923}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A2D736F-7A4E-4BA8-8480-271AAD0FF923}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A2D736F-7A4E-4BA8-8480-271AAD0FF923}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A927D8E7-43F7-438E-BBF9-D9AB013C0F67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A927D8E7-43F7-438E-BBF9-D9AB013C0F67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A927D8E7-43F7-438E-BBF9-D9AB013C0F67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A927D8E7-43F7-438E-BBF9-D9AB013C0F67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD5AE80E-D20E-4054-892F-80EC696B62D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD5AE80E-D20E-4054-892F-80EC696B62D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD5AE80E-D20E-4054-892F-80EC696B62D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD5AE80E-D20E-4054-892F-80EC696B62D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4DA272B-A6EA-43A1-89DC-1D25E91AAE02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4DA272B-A6EA-43A1-89DC-1D25E91AAE02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4DA272B-A6EA-43A1-89DC-1D25E91AAE02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4DA272B-A6EA-43A1-89DC-1D25E91AAE02}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
